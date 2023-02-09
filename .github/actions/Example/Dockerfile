@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-COPY check.sh /check.sh
+COPY check.sh .
 #RUN apt update
 RUN chmod +x check.sh
 ENTRYPOINT ["/check.sh"]
