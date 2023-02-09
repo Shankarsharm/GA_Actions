@@ -1,0 +1,23 @@
+name: SWPATH Sync Job
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '/sync/repo/Readme.md'
+jobs:
+  Sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: Run Custom action
+        id: capture
+        uses: ./.github/actions/Example
+        with:
+          Name: Shankarsharmas
+      - name: Display the outputs
+        run: |
+          echo "Messages to display for users: ${{ steps.capture.outputs.message }}"    
+         
+                  
