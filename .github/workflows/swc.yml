@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - 'master'
-    
+    paths:  
+      - 'sync/repo/Readme.md'
 jobs:
   Sync:
     runs-on: ubuntu-latest
