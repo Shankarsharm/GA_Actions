@@ -16,7 +16,7 @@ jobs:
         id: capture
         uses: ./.github/actions/Example
         with:
-          Name: Shankarsharmas
+          Name: Shivam_Patil
       - name: Display the outputs
         run: |
           echo "Messages to display for users: ${{ steps.capture.outputs.message }}"
