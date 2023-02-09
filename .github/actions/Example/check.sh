@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Hi i am $1 testing github actions"
-message=$(date)
+value=$(date)
 
-echo "message=$message" >> $GITHUB_OUTPUT
+echo "value=$message" >> $GITHUB_OUTPUT
