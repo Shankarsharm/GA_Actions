@@ -23,7 +23,7 @@ jobs:
       - name: Download the Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
+          name: artifact_files
           path: .github
          
                   
