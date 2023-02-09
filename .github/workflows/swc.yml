@@ -21,9 +21,9 @@ jobs:
         run: |
           echo "Messages to display for users: ${{ steps.capture.outputs.message }}"
       - name: Download the Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: /files
+          path: .github
          
                   
