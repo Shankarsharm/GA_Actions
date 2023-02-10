@@ -23,11 +23,9 @@ jobs:
           ls -larth
           pwd
           whoami
-          cd sync
+          cd .github/actions/Example/
           ls
-          cd repo
-          ls
-          cat Readme.md
+          python3 check.py
       - name: Download the Artifacts
         uses: actions/upload-artifact@v3
         with:
