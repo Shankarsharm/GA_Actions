@@ -6,7 +6,6 @@ on:
     paths:  
       - 'sync/repo/Readme.md'
   workflow_dispatch:
-  repository_dispatch:
 jobs:
   Sync:
     runs-on: ubuntu-latest
