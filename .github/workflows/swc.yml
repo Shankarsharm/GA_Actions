@@ -23,6 +23,11 @@ jobs:
           ls -larth
           pwd
           whoami
+          cd sync
+          ls
+          cd repo
+          ls
+          cat Readme.md
       - name: Download the Artifacts
         uses: actions/upload-artifact@v3
         with:
