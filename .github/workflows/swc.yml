@@ -7,7 +7,6 @@ on:
       - 'sync/repo/Readme.md'
   workflow_dispatch:
   repository_dispatch:
-    types: [Trigger Workflow]
 jobs:
   Sync:
     runs-on: ubuntu-latest
