@@ -1,6 +1,5 @@
 name: SWPATH Sync Job
 on:
-  webhook:
   push:
     branches:
       - 'master'
