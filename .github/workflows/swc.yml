@@ -31,7 +31,7 @@ jobs:
           cd .github/actions/Example/
           ls
           python3 check.py
-      - name: Download the Artifacts
+      - name: Upload the Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: artifact_files
