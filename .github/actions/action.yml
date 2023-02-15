@@ -1,0 +1,23 @@
+name: "Running composite actions"
+description: "use the code frequently"
+runs:
+  using: 'composite'
+  steps:
+    - name: Clone Git repo
+      uses: actions/checkout@v3
+      with:
+        repository: 'Github-Actions'
+        ref: 'master'
+        path: '$GITHUB_WORKSPACE'
+    - name: Run the shell script
+      run: |
+        cd 
+        pwd
+        ls 
+        cd ..
+    - name: Push it to repo
+      uses: uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: "Github-Actions"
+        branch: "master" 
